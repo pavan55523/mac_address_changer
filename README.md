@@ -15,4 +15,25 @@ HOW TO USE:
 >python3 mac_address_changer_cla.py -i (interface_name) -m (new_mac_address)
                     OR
 >python3 mac_address_changer_cla.py --interface (interface_name) --new_mac (new_mac_address)
+
+______________________________________________________________________________________________
+
+# network_scanner
+This is a python script that scans the given ip address range specified by the user and returns the IP ADDRESS and MAC ADDRESS using ARP.
+
+The algorithm we used in this network scanner implementation has 4 main steps
+1)Create a ARP request packet and broadcast it to the gateway MAC address
+2)Send and Recieve the packet response
+3)Analyse the response
+4)Print the result
+
+HOW TO USE THIS SCRIPT:
+>python network_scanner.py -t target_IP_range
+              OR
+>python network_scanner.py --target target_IP_range
+
+SAMPLE EXAMPLE:
+>python network_scanner.py -t 192.169.187.1/24
+
+________________________________________________________________________________________
   
