@@ -36,4 +36,13 @@ SAMPLE EXAMPLE:
 >python network_scanner.py -t 192.169.187.1/24
 
 ________________________________________________________________________________________
+
+# arp-spoof-detector
+This python script when run in a machine, tells the user whether that machine is under ARP spoofing attack or not.
+
+# Process it follows
+1) It gets the MAC address of the owner machine as real_mac.
+2) It then checks in the network whether any other machines have same IP address and if yes it gets the MAC address of that machine as response_mac.
+3) If real_mac equals to response_mac then it is his own machine so no attack.
+  else other machine with different MAC address has spoofed the owners IP.
   
